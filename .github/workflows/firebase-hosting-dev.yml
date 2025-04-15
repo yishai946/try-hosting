@@ -1,4 +1,4 @@
-name: Deploy to Firebase Hosting on Dev Push (Staging)
+name: Deploy to Firebase Hosting (staging)
 
 on:
   push:
@@ -10,14 +10,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - run: npm ci && npm run build
+      - name: Install dependencies
+        run: npm ci
 
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy to Firebase Hosting (staging)
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_TRY_HOSTING_A5EDA }}
           projectId: try-hosting-a5eda
           target: staging
-          channelId: staging 

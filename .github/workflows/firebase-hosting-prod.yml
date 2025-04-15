@@ -20,4 +20,3 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_TRY_HOSTING_A5EDA }}
           projectId: try-hosting-a5eda
           target: prod
-          channelId: live
