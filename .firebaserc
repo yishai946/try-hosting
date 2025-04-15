@@ -3,7 +3,7 @@
     "default": "try-hosting-a5eda"
   },
   "targets": {
-    "prod": {
+    "try-hosting-a5eda": {
       "hosting": {
         "prod": [
           "try-hosting-a5eda"
@@ -13,6 +13,5 @@
         ]
       }
     }
-  },
-  "etags": {}
+  }
 }
