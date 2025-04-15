@@ -7,9 +7,6 @@
       "hosting": {
         "prod": [
           "try-hosting-a5eda"
-        ],
-        "staging": [
-          "try-hosting-a5eda-staging"
         ]
       }
     }
