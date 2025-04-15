@@ -12,14 +12,6 @@
           "try-hosting-a5eda-staging"
         ]
       }
-    },
-    "prod": {
-      "hosting": {
-        "staging": [
-          "try-hosting-a5eda-staging"
-        ]
-      }
     }
-  },
-  "etags": {}
+  }
 }
