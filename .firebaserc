@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "try-hosting-a5eda"
+  },
+  "targets": {
+    "prod": {
+      "hosting": {
+        "prod": [
+          "try-hosting-a5eda"
+        ],
+        "staging": [
+          "try-hosting-a5eda-staging"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
